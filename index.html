@@ -1,748 +1,363 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2025年08月29日 金融市場日報｜洞察・解構・透視全球資產</title>
-    <meta name="description" content="2025年08月29日 金融市場日報｜洞察・解構・透視全球資產">
+    <title>2025年08月27日 金融市場日報</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Noto Sans TC', sans-serif; background-color: #f8fafc; color: #1e293b; }
-        .main-title { font-size: 3.125rem; }
-        .sub-title { font-size: 2.415rem; }
-        h2 { font-size: 1.2rem; }
-        h3.table-title { font-size: 1.125rem; }
-        p, td, li, thead th { font-size: 1rem; }
-        .gradient-text { background: linear-gradient(to right, #4f46e5, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .structured-analysis p { line-height: 1.75; }
-        .text-up { color: #ef4444; }
-        .text-down { color: #22c55e; }
-        .heatmap-keyword-text { font-weight: 700; font-size: 1.1rem; color: white; }
-        .date-range { font-size: 0.8rem; font-weight: 400; }
-        @media (max-width: 768px) {
-            .main-title { font-size: 1.8rem; }
-            .sub-title { font-size: 1.3225rem; }
-            h2, h3.table-title, p, td, li, thead th { font-size: 1.2rem; }
-            .heatmap-keyword-text { font-size: 1.3rem; }
-            .date-range { font-size: 1rem; }
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
         }
-        #downloadBtn { position: fixed; bottom: 2rem; right: 2rem; z-index: 50; }
+        .gradient-text {
+            background: linear-gradient(to right, #4f46e5, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        .main-title { font-size: 1.8rem; font-weight: 700; }
+        .sub-title { font-size: 1.265rem; font-weight: 600; color: #2563eb; }
+        h2 { font-size: 1.15rem; font-weight: 700; }
+        h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; }
+        p, td, li { font-size: 1.15rem; line-height: 1.75; }
+        ul { list-style-position: outside; padding-left: 1.5rem; margin-top: 1rem;}
+        li { margin-top: 0.5rem; }
+        .analyst-insight {
+            background-color: #fefce8;
+            border-left: 4px solid #eab308;
+            padding: 1rem 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .analyst-insight strong { color: #854d0e; }
+        .table-bordered th, .table-bordered td { border: 1px solid #e2e8f0; padding: 0.75rem 1rem; }
+        thead { font-size: 1.15rem; font-weight: 600; background-color: #f1f5f9; }
+
+        @media (min-width: 768px) {
+            .main-title { font-size: 3.125rem; }
+            .sub-title { font-size: 2.415rem; }
+            h2 { font-size: 1.2rem; }
+            h3 { font-size: 1.25rem; }
+            p, td, li { font-size: 1rem; }
+            thead { font-size: 1rem; }
+        }
     </style>
 </head>
-<body class="text-slate-800">
-    <button id="downloadBtn" class="bg-indigo-600 text-white font-bold py-3 px-5 rounded-full shadow-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all duration-300 ease-in-out flex items-center">
-        <i class="fa-solid fa-download mr-2"></i><span>下載日報</span>
-    </button>
+<body class="bg-slate-50">
     <div class="container mx-auto max-w-5xl p-4 md:p-8">
-        <header class="text-center mb-12">
-            <h1 class="main-title font-bold gradient-text">2025年08月29日 金融市場日報</h1>
-            <p class="sub-title font-semibold text-blue-600 mt-2">美GDP上修助攻，AI概念股漲勢分歧</p>
+        <header class="text-center mb-10 md:mb-12">
+            <h1 class="main-title gradient-text">2025年08月27日 金融市場日報</h1>
+            <p class="sub-title mt-2">蘋果發表會點燃科技股 川普干預Fed引發市場震盪</p>
         </header>
-        <main class="space-y-12">
-            <!-- 1. 市場脈動 -->
+
+        <main class="space-y-8">
+            <!-- Section 1: Market Pulse -->
             <article class="bg-white p-6 md:p-8 rounded-2xl shadow-lg">
-                <h2 class="font-bold text-sky-600 flex items-center"><i class="fa-solid fa-chart-line mr-3"></i><strong>市場脈動</strong></h2>
-                <div class="mt-4 border-t border-slate-200 pt-4 md:grid md:grid-cols-2 md:gap-8">
-                    <div>
-                        <h3 class="table-title font-semibold text-slate-700 mb-4">新聞關鍵字熱度條</h3>
-                        <div class="space-y-3">
-                            <div class="w-full bg-slate-100 rounded-full">
-                                <div class="bg-red-500 text-center p-2 rounded-full" style="width: 100%"><span class="heatmap-keyword-text">AI</span></div>
-                            </div>
-                            <div class="w-full bg-slate-100 rounded-full">
-                                <div class="bg-red-500 text-center p-2 rounded-full" style="width: 95%"><span class="heatmap-keyword-text">輝達</span></div>
-                            </div>
-                            <div class="w-full bg-slate-100 rounded-full">
-                                <div class="bg-orange-500 text-center p-2 rounded-full" style="width: 90%"><span class="heatmap-keyword-text">台積電</span></div>
-                            </div>
-                            <div class="w-full bg-slate-100 rounded-full">
-                                <div class="bg-orange-500 text-center p-2 rounded-full" style="width: 85%"><span class="heatmap-keyword-text">降息/Fed</span></div>
-                            </div>
-                            <div class="w-full bg-slate-100 rounded-full">
-                                <div class="bg-amber-500 text-center p-2 rounded-full" style="width: 80%"><span class="heatmap-keyword-text">川普</span></div>
-                            </div>
-                            <div class="w-full bg-slate-100 rounded-full">
-                                <div class="bg-amber-500 text-center p-2 rounded-full" style="width: 75%"><span class="heatmap-keyword-text">美國GDP</span></div>
-                            </div>
-                            <div class="w-full bg-slate-100 rounded-full">
-                                <div class="bg-yellow-500 text-center p-2 rounded-full" style="width: 70%"><span class="heatmap-keyword-text">晶片/半導體</span></div>
-                            </div>
-                            <div class="w-full bg-slate-100 rounded-full">
-                                <div class="bg-yellow-500 text-center p-2 rounded-full" style="width: 65%"><span class="heatmap-keyword-text">俄烏</span></div>
-                            </div>
-                            <div class="w-full bg-slate-100 rounded-full">
-                                <div class="bg-lime-500 text-center p-2 rounded-full" style="width: 60%"><span class="heatmap-keyword-text">巴菲特</span></div>
-                            </div>
-                            <div class="w-full bg-slate-100 rounded-full">
-                                <div class="bg-lime-500 text-center p-2 rounded-full" style="width: 55%"><span class="heatmap-keyword-text">ETF</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-8 md:mt-0">
-                        <h3 class="table-title font-semibold text-slate-700 mb-4">前一個交易日市場關鍵時間軸</h3>
-                        <div class="structured-analysis space-y-4">
-                            <p><span class="inline-block bg-gray-200 text-gray-800 rounded-md px-2 py-1 text-xs font-bold mr-2">(台股盤前) 09:00前</span>輝達財報優於預期但展望保守，導致相關概念股股價盤前承壓。</p>
-                            <p><span class="inline-block bg-gray-200 text-gray-800 rounded-md px-2 py-1 text-xs font-bold mr-2">(台股盤中) 09:51</span>台股開盤，權值股臉色偏綠，指數在平盤下震盪。</p>
-                            <p><span class="inline-block bg-gray-200 text-gray-800 rounded-md px-2 py-1 text-xs font-bold mr-2">(台股盤中) 14:31</span>台積電帶頭下殺，台股尾盤跳水，指數下跌超過280點收在最低點。</p>
-                            <p><span class="inline-block bg-gray-200 text-gray-800 rounded-md px-2 py-1 text-xs font-bold mr-2">(台股盤後) 14:57</span>三大法人聯手賣超，外資單日賣超金額高達新台幣96.68億元。</p>
-                            <p><span class="inline-block bg-gray-200 text-gray-800 rounded-md px-2 py-1 text-xs font-bold mr-2">(台股盤後) 15:36</span>載板廠利機法說會表示目前已接單爆滿，訂單能見度已達明年。</p>
-                            <p><span class="inline-block bg-gray-200 text-red-700 rounded-md px-2 py-1 text-xs font-bold mr-2">(美股盤前) 20:38</span>美國第二季GDP成長率上修至3.3%，顯示經濟動能強勁。</p>
-                            <p><span class="inline-block bg-gray-200 text-red-700 rounded-md px-2 py-1 text-xs font-bold mr-2">(美股盤前) 21:17</span>美國上周初領失業金人數降至22.9萬人，強化了就業市場的韌性訊號。</p>
-                            <p><span class="inline-block bg-gray-200 text-red-700 rounded-md px-2 py-1 text-xs font-bold mr-2">(美股盤中) 21:30後</span>受強勁GDP數據與AI樂觀情緒影響，標普500指數首次突破6500點，與道瓊指數同創歷史新高。</p>
-                            <p><span class="inline-block bg-gray-200 text-red-700 rounded-md px-2 py-1 text-xs font-bold mr-2">(美股盤後) 05:54</span>金價攀升至五週高點，受聯準會獨立性隱憂下美元走弱影響。</p>
-                            <p><span class="inline-block bg-gray-200 text-red-700 rounded-md px-2 py-1 text-xs font-bold mr-2">(美股盤後) 06:02</span>邁威爾財測不如市場預期，導致盤後股價暴跌12%。</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-8">
-                    <h3 class="table-title font-semibold text-slate-700 mb-4">台股盤前展望</h3>
-                    <div class="structured-analysis">
-                        <p><strong>美股喜迎經濟數據利多，台股開盤壓力依舊</strong> 美國第二季GDP上修至<strong>3.3%</strong>，強勁的經濟數據推升美股三大指數創歷史新高，為全球市場帶來正面動能。然而，台灣市場在電子權值股面臨輝達財報釋出的保守展望與後續失望賣壓，恐使開盤氛圍延續疲軟，預期將呈現多空拉鋸。</p>
-                        <p class="mt-4"><strong>外資連續賣超，籌碼面呈現弱勢</strong> 三大法人在前一個交易日聯手賣超高達<strong>137.81億</strong>新台幣，其中外資賣超金額達到<strong>96.68億</strong>新台幣，顯示資金明顯呈現流出態勢。這種籌碼結構表明市場信心動搖，短期內指數上攻動能將面臨嚴峻挑戰。</p>
-                        <p class="mt-4"><strong>載板與軍工族群成新焦點</strong> 在權值股受壓的同時，部分產業逆勢走強。載板大廠利機法說會釋出訂單能見度至明年，以及英特磊接獲美空軍訂單的利多消息，預計將使載板與軍工等特定族群成為盤面資金關注的新焦點。</p>
-                    </div>
-                </div>
-                <p class="text-xs text-slate-500 mt-6 text-center">© 2025 Eagle Eye Insight Desk — 溯源‧思辨‧啟發</p>
-            </article>
-            <!-- 2. 美股收盤結構剖析 -->
-            <article class="bg-white p-6 md:p-8 rounded-2xl shadow-lg">
-                <h2 class="font-bold text-red-600 flex items-center"><i class="fa-solid fa-chart-pie mr-3"></i><strong>美股收盤結構剖析</strong></h2>
+                <h2 class="flex items-center text-sky-600"><i class="fa-solid fa-chart-line mr-3"></i><strong>市場脈動</strong></h2>
                 <div class="mt-4 border-t border-slate-200 pt-4">
-                    <div class="overflow-x-auto">
-                        <table class="w-full text-center">
-                            <thead>
-                                <tr>
-                                    <th class="py-2 px-3">指數名稱</th>
-                                    <th class="py-2 px-3">最新收盤價</th>
-                                    <th class="py-2 px-3">日漲跌<br><span class="date-range">(08/22~08/28)</span></th>
-                                    <th class="py-2 px-3">五日漲跌<br><span class="date-range">(07/25~08/28)</span></th>
-                                    <th class="py-2 px-3">月漲跌<br><span class="date-range">(05/27~08/28)</span></th>
-                                    <th class="py-2 px-3">季漲跌<br><span class="date-range">(12/31~08/28)</span></th>
-                                    <th class="py-2 px-3">年初至今<br><span class="date-range">(12/31~08/28)</span></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">道瓊工業指數</td>
-                                    <td class="py-2 px-3"><strong>45,636.90</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>0.16%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>0.01%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>1.64%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>7.78%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>7.27%</strong></td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">標普500</td>
-                                    <td class="py-2 px-3"><strong>6,501.86</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>0.32%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>0.54%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>1.77%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>9.8%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>10.55%</strong></td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">那斯達克</td>
-                                    <td class="py-2 px-3"><strong>21,705.16</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>0.53%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>0.97%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>2.83%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>13.05%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>12.4%</strong></td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">費城半導體指數</td>
-                                    <td class="py-2 px-3"><strong>5,853.05</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>0.49%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>1.71%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>3.67%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>20.41%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>17.53%</strong></td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">羅素2000</td>
-                                    <td class="py-2 px-3"><strong>2,378.41</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>0.19%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>0.7%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>5.19%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>13.78%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>6.65%</strong></td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">歐洲Stoxx600</td>
-                                    <td class="py-2 px-3"><strong>553.67</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-0.2%</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-1.36%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>0.68%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>0.24%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>9.67%</strong></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <p>全球市場在分析日經歷劇烈震盪，美國總統川普宣布開除聯準會(Fed)理事庫克，此舉引發市場對央行獨立性的擔憂，一度造成市場混亂。然而，隨著蘋果公司宣布將於9月10日舉行秋季新品發表會，科技股受到提振，帶動美股四大指數全面反彈收高。投資人目前正密切關注輝達(Nvidia)即將公布的財報，以及本週的核心PCE通膨數據，以尋求市場的下一步方向。</p>
+                    <ul>
+                        <li><strong>川普挑戰Fed獨立性：</strong>川普以房貸詐欺指控為由，宣布開除Fed理事庫克，此舉為市場投下震撼彈，引發對聯準會未來政策走向的疑慮，並導致美元一度走弱。</li>
+                        <li><strong>蘋果發表會日期確定：</strong>蘋果公司正式宣布秋季新品發表會日期，市場預期將推出iPhone 17系列等新品，此消息為蘋概股及相關科技股注入強心針，成為推動大盤反彈的關鍵力量。</li>
+                        <li><strong>市場聚焦輝達財報：</strong>AI晶片龍頭輝達即將公布最新財報，其業績表現與未來展望，被視為檢驗AI產業熱度的重要指標，市場對此高度關注。</li>
+                    </ul>
+                    <div class="analyst-insight">
+                        <p><strong>分析師洞察：</strong>昨日市場的走勢，清晰地反映了政治干預與產業利多之間的拉鋸。川普對聯準會的舉動，為市場帶來了長期的不確定性，但蘋果發表會的利多，則為科技股提供了短期的上漲動能。目前市場情緒複雜，一方面擔憂央行獨立性受損，另一方面又對科技新品抱持期待。輝達的財報結果，將是決定市場短期內是延續反彈，還是重回修正格局的關鍵。</p>
                     </div>
-                    <p class="text-xs text-slate-500 mt-2 text-right">資料來源: Yahoo Finance</p>
-                    <div class="mt-6 bg-amber-50 border-l-4 border-amber-400 p-6 rounded-lg">
-                        <p><strong class="text-red-700">分析師洞察：</strong></p>
-                        <div class="structured-analysis">
-                            <p><strong>經濟數據堅挺為美股提供廣泛支撐</strong> 美國第二季GDP上修至<strong>3.3%</strong>，以及初領失業金人數下降至<strong>22.9萬</strong>人，均強化了市場對經濟韌性的信心。這份強勁的數據抵銷了市場對輝達財報展望的擔憂，推動標普500指數首次突破<strong>6500</strong>點，顯示當前美股的漲勢具備更廣泛的基礎，不僅僅是單一科技巨頭所驅動。</p>
-                            <p class="mt-4"><strong>AI概念股漲勢面臨冷卻考驗</strong> 儘管輝達財報營收超乎預期，但對於其中國業務與資料中心成長放緩的隱憂，導致股價在盤後表現震盪。這一現象顯示，市場已充分甚至過度反映AI題材，任何未達「完美」標準的數據都可能引發回檔。相關概念股正面臨估值與動能的雙重考驗，需謹慎看待。</p>
-                        </div>
-                    </div>
+                     <div class="grid md:grid-cols-2 gap-8 items-start mt-8">
+                          <div>
+                              <h3 class="table-title text-slate-700 mb-4">新聞關鍵字熱度</h3>
+                              <div class="space-y-3 text-sm md:text-base">
+                                  <div class="flex items-center"><span class="w-32 font-medium text-slate-600">川普開除Fed理事</span><div class="w-full bg-slate-200 rounded-full h-5"><div class="bg-red-500 h-5 rounded-full" style="width: 98%;"></div></div></div>
+                                  <div class="flex items-center"><span class="w-32 font-medium text-slate-600">蘋果發表會</span><div class="w-full bg-slate-200 rounded-full h-5"><div class="bg-red-500 h-5 rounded-full" style="width: 95%;"></div></div></div>
+                                  <div class="flex items-center"><span class="w-32 font-medium text-slate-600">輝達財報</span><div class="w-full bg-slate-200 rounded-full h-5"><div class="bg-orange-500 h-5 rounded-full" style="width: 90%;"></div></div></div>
+                                  <div class="flex items-center"><span class="w-32 font-medium text-slate-600">Fed獨立性</span><div class="w-full bg-slate-200 rounded-full h-5"><div class="bg-orange-500 h-5 rounded-full" style="width: 87%;"></div></div></div>
+                                  <div class="flex items-center"><span class="w-32 font-medium text-slate-600">核心PCE</span><div class="w-full bg-slate-200 rounded-full h-5"><div class="bg-amber-500 h-5 rounded-full" style="width: 81%;"></div></div></div>
+                                  <div class="flex items-center"><span class="w-32 font-medium text-slate-600">iPhone 17</span><div class="w-full bg-slate-200 rounded-full h-5"><div class="bg-amber-500 h-5 rounded-full" style="width: 76%;"></div></div></div>
+                                  <div class="flex items-center"><span class="w-32 font-medium text-slate-600">美元下跌</span><div class="w-full bg-slate-200 rounded-full h-5"><div class="bg-yellow-500 h-5 rounded-full" style="width: 72%;"></div></div></div>
+                                  <div class="flex items-center"><span class="w-32 font-medium text-slate-600">台股下跌</span><div class="w-full bg-slate-200 rounded-full h-5"><div class="bg-yellow-500 h-5 rounded-full" style="width: 68%;"></div></div></div>
+                                  <div class="flex items-center"><span class="w-32 font-medium text-slate-600">法人賣超</span><div class="w-full bg-slate-200 rounded-full h-5"><div class="bg-lime-500 h-5 rounded-full" style="width: 63%;"></div></div></div>
+                                  <div class="flex items-center"><span class="w-32 font-medium text-slate-600">油價回跌</span><div class="w-full bg-slate-200 rounded-full h-5"><div class="bg-lime-500 h-5 rounded-full" style="width: 58%;"></div></div></div>
+                              </div>
+                          </div>
+                          <div>
+                              <h3 class="table-title text-slate-700 mb-4 mt-8 md:mt-0">昨日市場關鍵時間軸</h3>
+                              <div class="space-y-3 text-sm md:text-base">
+                                  <p><strong class="font-semibold text-slate-900">[台北時間 19:48]</strong> 三商美邦壽傳出售，金管會澄清未接獲函報，駁斥高層懇談說法。</p>
+                                  <p><strong class="font-semibold text-slate-900">[台北時間 21:38]</strong> 美股開低，市場反應川普挑戰Fed獨立性的消息。</p>
+                                  <p><strong class="font-semibold text-slate-900">[台北時間 00:25]</strong> 蘋果宣布將於9月10日舉行秋季新品發表會，激勵股價上漲。</p>
+                                  <p><strong class="font-semibold text-slate-900">[台北時間 04:28]</strong> 川普表示將掌控Fed多數席次，並預告房市將因降息而大幅好轉。</p>
+                                  <p><strong class="font-semibold text-slate-900">[台北時間 05:11]</strong> 美股收盤，在蘋果等科技股帶動下，四大指數全面收高。</p>
+                              </div>
+                          </div>
+                     </div>
                 </div>
-                <p class="text-xs text-slate-500 mt-6 text-center">© 2025 Eagle Eye Insight Desk — 溯源‧思辨‧啟發</p>
             </article>
-            <!-- 3. 總體經濟與美債 -->
+
+            <!-- Section 2: Macro & Treasuries -->
             <article class="bg-white p-6 md:p-8 rounded-2xl shadow-lg">
-                <h2 class="font-bold text-blue-600 flex items-center"><i class="fa-solid fa-landmark mr-3"></i><strong>總體經濟與美債</strong></h2>
+                <h2 class="flex items-center text-blue-600"><i class="fa-solid fa-landmark mr-3"></i><strong>總體經濟與美債</strong></h2>
                 <div class="mt-4 border-t border-slate-200 pt-4">
-                    <div class="overflow-x-auto">
-                        <table class="w-full text-center">
-                            <thead>
-                                <tr>
-                                    <th class="py-2 px-3">指標名稱</th>
-                                    <th class="py-2 px-3">最新收盤價</th>
-                                    <th class="py-2 px-3">日漲跌<br><span class="date-range">(08/22~08/28)</span></th>
-                                    <th class="py-2 px-3">五日漲跌<br><span class="date-range">(07/25~08/28)</span></th>
-                                    <th class="py-2 px-3">月漲跌<br><span class="date-range">(05/27~08/28)</span></th>
-                                    <th class="py-2 px-3">季漲跌<br><span class="date-range">(12/31~08/28)</span></th>
-                                    <th class="py-2 px-3">年初至今<br><span class="date-range">(12/31~08/28)</span></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">美國3月期殖利率</td>
-                                    <td class="py-2 px-3"><strong>4.07%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>+1.20 bps</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-1.60 bps</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-17.30 bps</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-13.10 bps</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-13.60 bps</strong></td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">美國2年期殖利率</td>
-                                    <td class="py-2 px-3"><strong>3.70%</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-0.90 bps</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-6.30 bps</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-25.60 bps</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-32.70 bps</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-68.40 bps</strong></td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">美國10年期殖利率</td>
-                                    <td class="py-2 px-3"><strong>4.21%</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-3.10 bps</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-5.30 bps</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-17.90 bps</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-22.70 bps</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-36.60 bps</strong></td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">美國30年期殖利率</td>
-                                    <td class="py-2 px-3"><strong>4.87%</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-3.90 bps</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-1.00 bps</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-5.50 bps</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-6.60 bps</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>8.80 bps</strong></td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">高收益債券ETF(HYG)</td>
-                                    <td class="py-2 px-3"><strong>81.01</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>0.05%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>0.2%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>0.65%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>1.99%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>3.0%</strong></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <p>美國債券市場昨日劇烈波動，在美國總統川普宣布開除聯準會(Fed)理事庫克後，市場對央行獨立性的擔憂升溫，引發避險買盤湧入，一度壓低各天期公債殖利率。然而，隨著股市反彈，市場情緒回穩，殖利率收復了大部分失地。30年期公債殖利率盤中一度升至近四年高點，反映了市場對長期財政紀律與央行信譽的擔憂。</p>
+                    <ul>
+                        <li><strong>政治干預引發避險潮：</strong>川普對Fed的人事干預，是近期影響債市最主要的非經濟因素。此舉短期內雖可能因避險需求而壓低殖利率，但長期來看，若市場對Fed的獨立性失去信心，可能要求更高的風險溢價，反而推升殖利率。</li>
+                        <li><strong>長天期債券波動加劇：</strong>30年期公債殖利率的劇烈波動，特別凸顯了市場對長期不確定性的敏感。投資者擔憂，若Fed的獨立性受損，長期通膨預期可能失控，進而影響長期債券的價值。</li>
+                        <li><strong>市場靜待通膨數據：</strong>在政治雜音之外，市場的基本面焦點仍是通膨。本週將公布的核心PCE數據，將是判斷Fed未來利率路徑的關鍵，其重要性甚至高於近期的政治事件。</li>
+                    </ul>
+                    <div class="analyst-insight">
+                        <p><strong>分析師洞察：</strong>昨日債市的V型反轉，顯示市場正努力在政治不確定性與經濟基本面之間尋找平衡。川普的舉動無疑為市場增添了新的變數，並可能在未來持續干擾市場。然而，從根本上看，通膨與經濟成長的前景，仍是決定殖利率長期走向的核心因素。在核心PCE數據公布前，預期債券市場將維持高度波動的狀態。</p>
                     </div>
-                    <p class="text-xs text-slate-500 mt-2 text-right">資料來源: Yahoo Finance</p>
-                    <div class="mt-6 bg-amber-50 border-l-4 border-amber-400 p-6 rounded-lg">
-                        <p><strong class="text-red-700">分析師洞察：</strong></p>
-                        <div class="structured-analysis">
-                            <p><strong>避險需求與政策預期角力，殖利率曲線多空不明</strong> 在地緣政治風險升溫與AI概念股漲勢動搖的背景下，市場避險情緒驅動資金流向債市，導致美國<strong>10年期</strong>與<strong>30年期</strong>殖利率分別下降<strong>3.10 bps</strong>和<strong>3.90 bps</strong>。這反映了市場對長期經濟前景的謹慎，並開始消化潛在的降息預期，使得長天期公債的吸引力有所提升。</p>
-                            <p class="mt-4"><strong>信用利差持平，市場情緒未見全面惡化</strong> 儘管長天期殖利率呈現下降趨勢，但代表市場風險胃納的高收益債券ETF (<strong>HYG</strong>) 仍微幅上漲<strong>0.05%</strong>。這顯示儘管部分避險資金湧入公債，但整體市場的信用風險意涵並未全面惡化，信用利差維持穩定。此一分歧信號暗示，當前市場環境尚未形成全面的風險規避態勢。</p>
-                        </div>
-                    </div>
-                </div>
-                <p class="text-xs text-slate-500 mt-6 text-center">© 2025 Eagle Eye Insight Desk — 溯源‧思辨‧啟發</p>
-            </article>
-            <!-- 4. 能源與商品市場 -->
-            <article class="bg-white p-6 md:p-8 rounded-2xl shadow-lg">
-                <h2 class="font-bold text-amber-600 flex items-center"><i class="fa-solid fa-fire-flame-simple mr-3"></i><strong>能源與商品市場</strong></h2>
-                <div class="mt-4 border-t border-slate-200 pt-4">
-                    <div class="overflow-x-auto">
-                        <table class="w-full text-center">
-                            <thead>
-                                <tr>
-                                    <th class="py-2 px-3">指數名稱</th>
-                                    <th class="py-2 px-3">最新收盤價</th>
-                                    <th class="py-2 px-3">日漲跌<br><span class="date-range">(08/22~08/28)</span></th>
-                                    <th class="py-2 px-3">五日漲跌<br><span class="date-range">(07/25~08/28)</span></th>
-                                    <th class="py-2 px-3">月漲跌<br><span class="date-range">(05/27~08/28)</span></th>
-                                    <th class="py-2 px-3">季漲跌<br><span class="date-range">(12/31~08/28)</span></th>
-                                    <th class="py-2 px-3">年初至今<br><span class="date-range">(12/31~08/28)</span></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">WTI原油</td>
-                                    <td class="py-2 px-3"><strong>64.21</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>0.09%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>0.86%</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-1.46%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>5.45%</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-10.47%</strong></td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">布蘭特原油</td>
-                                    <td class="py-2 px-3"><strong>67.58</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-0.69%</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-0.22%</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-1.26%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>5.45%</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-9.46%</strong></td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">黃金期貨</td>
-                                    <td class="py-2 px-3"><strong>3,475.40</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>2.08%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>2.99%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>4.24%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>5.34%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>32.18%</strong></td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">基礎金屬ETF (DBB)</td>
-                                    <td class="py-2 px-3"><strong>19.60</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>0.58%</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-0.18%</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-0.23%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>4.89%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>4.0%</strong></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <p class="text-xs text-slate-500 mt-2 text-right">資料來源: Yahoo Finance</p>
-                    <div class="mt-6 bg-amber-50 border-l-4 border-amber-400 p-6 rounded-lg">
-                        <p><strong class="text-red-700">分析師洞察：</strong></p>
-                        <div class="structured-analysis">
-                            <p><strong>地緣政治風險為油價提供微弱支撐</strong> 儘管布蘭特原油價格下跌<strong>0.69%</strong>，但WTI原油微幅上漲<strong>0.09%</strong>，顯示市場對俄烏地緣政治衝突所引發的供應風險仍保持謹慎。此外，印度計畫增加俄羅斯原油進口的消息，在一定程度上支撐了原油價格，阻止了其進一步下跌，反映出市場對特定地區供需變化的敏感性。</p>
-                            <p class="mt-4"><strong>避險情緒升溫，黃金吸引力顯著提升</strong> 黃金期貨價格在單日大漲<strong>2.08%</strong>，同時美元指數下跌<strong>0.34%</strong>，這反映了市場的避險情緒顯著升溫。在川普與聯準會關係緊張、美國政治不確定性增加的背景下，黃金作為傳統避險資產的吸引力大幅提升，並成為資金的首選，推動其價格大幅走高。</p>
-                        </div>
-                    </div>
-                </div>
-                <p class="text-xs text-slate-500 mt-6 text-center">© 2025 Eagle Eye Insight Desk — 溯源‧思辨‧啟發</p>
-            </article>
-            <!-- 5. 台股盤勢解析 -->
-            <article class="bg-white p-6 md:p-8 rounded-2xl shadow-lg">
-                <h2 class="font-bold text-green-600 flex items-center"><i class="fa-solid fa-mountain-sun mr-3"></i><strong>台股盤勢解析</strong></h2>
-                <div class="mt-4 border-t border-slate-200 pt-4">
-                    <div class="overflow-x-auto mb-8">
-                        <table class="w-full text-center">
-                            <thead>
-                                <tr>
-                                    <th class="py-2 px-3">指數名稱</th>
-                                    <th class="py-2 px-3">最新收盤價</th>
-                                    <th class="py-2 px-3">日漲跌<br><span class="date-range">(08/22~08/28)</span></th>
-                                    <th class="py-2 px-3">五日漲跌<br><span class="date-range">(07/25~08/28)</span></th>
-                                    <th class="py-2 px-3">月漲跌<br><span class="date-range">(05/27~08/28)</span></th>
-                                    <th class="py-2 px-3">季漲跌<br><span class="date-range">(12/31~08/28)</span></th>
-                                    <th class="py-2 px-3">年初至今<br><span class="date-range">(12/31~08/28)</span></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">台灣加權指數</td>
-                                    <td class="py-2 px-3"><strong>24,236.45</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-1.16%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>1.99%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>3.73%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>13.59%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>5.22%</strong></td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">日經225</td>
-                                    <td class="py-2 px-3"><strong>42,828.79</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>0.73%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>0.46%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>3.31%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>13.53%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>7.36%</strong></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <p class="text-xs text-slate-500 mt-2 text-right">資料來源: Yahoo Finance</p>
                     <div class="overflow-x-auto mt-8">
-                        <table class="w-full text-center">
-                            <thead>
+                        <h3 class="table-title text-slate-700 mb-4">主要債券與風險指標表現</h3>
+                        <table class="w-full text-left text-slate-600 border-collapse table-bordered">
+                            <thead class="bg-slate-100">
                                 <tr>
-                                    <th class="py-2 px-3">單位</th>
-                                    <th class="py-2 px-3">本日買賣超(億)</th>
-                                    <th class="py-2 px-3">近5日增減(億)</th>
-                                    <th class="py-2 px-3">近20日增減(億)</th>
+                                    <th>指標名稱</th>
+                                    <th class="text-right">最新報價</th>
+                                    <th class="text-right">日變動(bps/%)</th>
+                                    <th class="text-right">五日漲跌</th>
+                                    <th class="text-right">月漲跌</th>
+                                    <th class="text-right">季漲跌</th>
+                                    <th class="text-right">年初至今</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">投信</td>
-                                    <td class="py-2 px-3 text-down"><strong>-27.64</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-46.69</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-10.66</strong></td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">自營商</td>
-                                    <td class="py-2 px-3 text-down"><strong>-13.49</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>177.47</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>231.73</strong></td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">外資</td>
-                                    <td class="py-2 px-3 text-down"><strong>-96.68</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-184.07</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-554.91</strong></td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">總計</td>
-                                    <td class="py-2 px-3 text-down"><strong>-137.81</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-53.29</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-333.84</strong></td>
-                                </tr>
+                                <tr><td>美國3月期殖利率</td><td class="text-right">4.09%</td><td class="text-green-600 text-right">-0.50 bps</td><td class="text-green-600 text-right">-2.70 bps</td><td class="text-green-600 text-right">-15.70 bps</td><td class="text-green-600 text-right">-14.20 bps</td><td class="text-green-600 text-right">-12.00 bps</td></tr>
+                                <tr><td>美國2年期殖利率</td><td class="text-right">3.74%</td><td class="text-green-600 text-right">-4.50 bps</td><td class="text-green-600 text-right">-7.00 bps</td><td class="text-green-600 text-right">-21.20 bps</td><td class="text-green-600 text-right">-33.80 bps</td><td class="text-green-600 text-right">-64.00 bps</td></tr>
+                                <tr><td>美國10年期殖利率</td><td class="text-right">4.26%</td><td class="text-green-600 text-right">-1.70 bps</td><td class="text-green-600 text-right">-3.80 bps</td><td class="text-green-600 text-right">-12.80 bps</td><td class="text-green-600 text-right">-25.10 bps</td><td class="text-green-600 text-right">-31.50 bps</td></tr>
+                                <tr><td>美國30年期殖利率</td><td class="text-right">4.91%</td><td class="text-red-600 text-right">2.10 bps</td><td class="text-red-600 text-right">0.50 bps</td><td class="text-green-600 text-right">-2.00 bps</td><td class="text-green-600 text-right">-12.20 bps</td><td class="text-red-600 text-right">12.30 bps</td></tr>
+                                <tr><td>高收益債券ETF(HYG)</td><td class="text-right">80.87</td><td class="text-red-600 text-right">0.22%</td><td class="text-red-600 text-right">0.65%</td><td class="text-red-600 text-right">0.47%</td><td class="text-red-600 text-right">2.43%</td><td class="text-red-600 text-right">2.82%</td></tr>
                             </tbody>
                         </table>
-                    </div>
-                    <p class="text-xs text-slate-500 mt-2 text-right">資料來源: 交易所資料整理</p>
-                    <div class="mt-6 bg-amber-50 border-l-4 border-amber-400 p-6 rounded-lg">
-                        <p><strong class="text-red-700">分析師洞察：</strong></p>
-                        <div class="structured-analysis">
-                            <p><strong>權值股尾盤跳水，輝達展望引發市場賣壓</strong> 在輝達財報發布後，其對未來展望的態度導致部分市場賣壓出籠。這影響了台灣供應鏈中科技權值股的股價，特別是台積電。台股在尾盤呈現下跌，單日跌幅達到<strong>1.16%</strong>，顯示市場對單一指標企業的動態反應敏感。</p>
-                            <p class="mt-4"><strong>三大法人同步賣超，外資提款幅度顯著</strong> 台股在當日的回檔也反映在籌碼面上，三大法人合計賣超高達<strong>137.81億</strong>新台幣。其中，外資單日大幅賣超<strong>96.68億</strong>新台幣，是近期以來少見的顯著提款行為。這表明外資對台灣科技股的短期前景持謹慎態度，加劇了市場的不確定性，為台股短期走勢帶來壓力。</p>
-                        </div>
+                        <p class="text-right text-xs text-slate-500 mt-2">資料來源: 20250827_指數整理表_含歷史資料.txt</p>
                     </div>
                 </div>
-                <p class="text-xs text-slate-500 mt-6 text-center">© 2025 Eagle Eye Insight Desk — 溯源‧思辨‧啟發</p>
             </article>
-            <!-- 6. 台幣與美元走勢 -->
+
+            <!-- Section 3: US Market Structure -->
             <article class="bg-white p-6 md:p-8 rounded-2xl shadow-lg">
-                <h2 class="font-bold text-cyan-600 flex items-center"><i class="fa-solid fa-dollar-sign mr-3"></i><strong>台幣與美元走勢</strong></h2>
+                <h2 class="flex items-center text-red-600"><i class="fa-solid fa-chart-pie mr-3"></i><strong>美股收盤結構剖析</strong></h2>
                 <div class="mt-4 border-t border-slate-200 pt-4">
-                    <div class="overflow-x-auto">
-                        <table class="w-full text-center">
-                            <thead>
+                    <p>美股在分析日上演反彈行情，四大指數全面收高。市場主要受到蘋果公司宣布將於9月10日舉行秋季新品發表會的利多消息激勵，帶動科技股走強。儘管盤中一度因美國總統川普宣布開除聯準會(Fed)理事庫克而引發震盪，但市場很快消化了此一政治衝擊，最終在科技股的領漲下收復失地。投資人目前正靜待輝達財報與本週的關鍵通膨數據。</p>
+                    <ul>
+                        <li><strong>蘋果發表會點燃科技股：</strong>蘋果宣布新品發表會日期，市場對iPhone 17等新品抱持高度期待，激勵蘋果股價上漲，並帶動了整體科技板塊的樂觀情緒。</li>
+                        <li><strong>市場消化政治干擾：</strong>川普對Fed的人事干預雖然一度引發市場對央行獨立性的擔憂，但投資者似乎更關注企業基本面與產業前景，此事件對股市的負面影響相對短暫。</li>
+                        <li><strong>輝達財報前夕市場樂觀：</strong>在輝達財報公布前，市場氣氛偏向樂觀，相關AI概念股普遍走強，顯示投資者對AI產業的長期趨勢依然看好。</li>
+                    </ul>
+                    <div class="analyst-insight">
+                        <p><strong>分析師洞察：</strong>昨日美股的V型反轉，顯示在當前的市場環境下，來自大型科技公司的具體利多，其影響力暫時蓋過了政治層面的不確定性。蘋果的新品發表會為市場注入了及時的強心針。然而，市場的真正考驗仍在後頭。輝達的財報數字，以及本週的核心PCE通膨數據，將共同決定這波反彈是曇花一現，還是新一輪上漲的開始。</p>
+                    </div>
+                    <div class="overflow-x-auto mt-8">
+                        <h3 class="table-title text-slate-700 mb-4">主要指數收盤表現</h3>
+                        <table class="w-full text-left text-slate-600 border-collapse table-bordered">
+                            <thead class="bg-slate-100">
                                 <tr>
-                                    <th class="py-2 px-3">指標名稱</th>
-                                    <th class="py-2 px-3">最新收盤價</th>
-                                    <th class="py-2 px-3">日漲跌<br><span class="date-range">(08/22~08/28)</span></th>
-                                    <th class="py-2 px-3">五日漲跌<br><span class="date-range">(07/25~08/28)</span></th>
-                                    <th class="py-2 px-3">月漲跌<br><span class="date-range">(05/27~08/28)</span></th>
-                                    <th class="py-2 px-3">季漲跌<br><span class="date-range">(12/31~08/28)</span></th>
-                                    <th class="py-2 px-3">年初至今<br><span class="date-range">(12/31~08/28)</span></th>
+                                    <th>指數名稱</th>
+                                    <th class="text-right">最新收盤價</th>
+                                    <th class="text-right">日漲跌</th>
+                                    <th class="text-right">五日漲跌</th>
+                                    <th class="text-right">月漲跌</th>
+                                    <th class="text-right">季漲跌</th>
+                                    <th class="text-right">年初至今</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">美元指數</td>
-                                    <td class="py-2 px-3"><strong>97.90</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-0.34%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>0.18%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>0.25%</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-1.63%</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-9.76%</strong></td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">美元兌台幣</td>
-                                    <td class="py-2 px-3"><strong>30.50</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-0.26%</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-0.06%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>+3.48%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>+1.78%</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-6.91%</strong></td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">歐元兌美元</td>
-                                    <td class="py-2 px-3"><strong>1.17</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>0.29%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>0.6%</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-0.63%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>3.04%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>12.26%</strong></td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2 px-3 font-semibold">美元兌日圓</td>
-                                    <td class="py-2 px-3"><strong>146.92</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-0.27%</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-0.99%</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-0.6%</strong></td>
-                                    <td class="py-2 px-3 text-up"><strong>1.9%</strong></td>
-                                    <td class="py-2 px-3 text-down"><strong>-6.42%</strong></td>
-                                </tr>
+                                <tr><td>道瓊工業指數</td><td class="text-right">45,418.07</td><td class="text-red-600 text-right">0.30%</td><td class="text-red-600 text-right">1.07%</td><td class="text-red-600 text-right">1.15%</td><td class="text-red-600 text-right">9.17%</td><td class="text-red-600 text-right">6.75%</td></tr>
+                                <tr><td>標普500</td><td class="text-right">6,465.94</td><td class="text-red-600 text-right">0.41%</td><td class="text-red-600 text-right">1.10%</td><td class="text-red-600 text-right">1.21%</td><td class="text-red-600 text-right">11.43%</td><td class="text-red-600 text-right">9.93%</td></tr>
+                                <tr><td>那斯達克</td><td class="text-right">21,544.27</td><td class="text-red-600 text-right">0.44%</td><td class="text-red-600 text-right">1.75%</td><td class="text-red-600 text-right">2.07%</td><td class="text-red-600 text-right">14.98%</td><td class="text-red-600 text-right">11.57%</td></tr>
+                                <tr><td>費城半導體指數</td><td class="text-right">5,807.92</td><td class="text-red-600 text-right">0.90%</td><td class="text-red-600 text-right">3.15%</td><td class="text-red-600 text-right">2.87%</td><td class="text-red-600 text-right">23.51%</td><td class="text-red-600 text-right">16.63%</td></tr>
+                                <tr><td>羅素2000</td><td class="text-right">2,358.60</td><td class="text-red-600 text-right">0.83%</td><td class="text-red-600 text-right">3.93%</td><td class="text-red-600 text-right">4.31%</td><td class="text-red-600 text-right">15.63%</td><td class="text-red-600 text-right">5.76%</td></tr>
+                                <tr><td>歐洲Stoxx600</td><td class="text-right">554.20</td><td class="text-green-600 text-right">-0.83%</td><td class="text-green-600 text-right">-0.87%</td><td class="text-red-600 text-right">0.77%</td><td class="text-red-600 text-right">1.66%</td><td class="text-red-600 text-right">9.78%</td></tr>
                             </tbody>
                         </table>
-                    </div>
-                    <p class="text-xs text-slate-500 mt-2 text-right">資料來源: Yahoo Finance</p>
-                    <div class="mt-6 bg-amber-50 border-l-4 border-amber-400 p-6 rounded-lg">
-                        <p><strong class="text-red-700">分析師洞察：</strong></p>
-                        <div class="structured-analysis">
-                            <p><strong>降息預期升溫，美元指數技術面承壓</strong> 儘管美國GDP數據強勁，但市場對聯準會未來降息的預期並未消退，加上對聯準會獨立性受政治干預的擔憂，共同導致美元指數單日下跌<strong>0.34%</strong>。美元指數已失守關鍵技術支撐，短期內下行風險增加。這也使得非美元貨幣如歐元相對走強，顯示市場資金重新權衡各主要貨幣的相對價值。</p>
-                            <p class="mt-4"><strong>台幣與日圓同步走升，避險與資金回流訊號並存</strong> 在美元走弱的背景下，新台幣兌美元升值了<strong>0.26%</strong>。儘管台股當日受外資大賣超**96.68億**新台幣的影響而大幅下挫，但新台幣的相對強勢顯示，資金並非全面流出台灣資產，可能受其他因素如避險或短期匯差交易支撐。同時，日圓兌美元也升值**0.27%**，表明在全球不確定性升高時，資金仍會尋求傳統避險貨幣。</p>
-                        </div>
+                        <p class="text-right text-xs text-slate-500 mt-2">資料來源: 20250827_指數整理表_含歷史資料.txt</p>
                     </div>
                 </div>
-                <p class="text-xs text-slate-500 mt-6 text-center">© 2025 Eagle Eye Insight Desk — 溯源‧思辨‧啟發</p>
             </article>
-            <!-- 7. 產業多空展望 -->
+
+            <!-- Section 4: Energy & Commodities -->
             <article class="bg-white p-6 md:p-8 rounded-2xl shadow-lg">
-                <h2 class="font-bold text-purple-600 flex items-center"><i class="fa-solid fa-industry mr-3"></i><strong>產業多空展望</strong></h2>
-                <div class="mt-4 border-t border-slate-200 pt-4 space-y-10">
-                    <div>
-                        <h3 class="text-xl font-bold text-green-700">買進：AI基礎建設 (以Google (GOOGL)為例)</h3>
-                        <div class="overflow-x-auto mt-4">
-                            <table class="w-full text-center">
-                                <thead>
-                                    <tr>
-                                        <th class="py-2 px-3">分析維度</th>
-                                        <th class="py-2 px-3">核心洞察</th>
-                                        <th class="py-2 px-3">市場評級</th>
-                                        <th class="py-2 px-3">技術指標</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="py-2 px-3 font-semibold">新技術影響</td>
-                                        <td class="py-2 px-3">大模型持續迭代，需要更龐大的運算與儲存基礎設施，推動投資持續增長。</td>
-                                        <td class="py-2 px-3 text-up">正面</td>
-                                        <td class="py-2 px-3 text-up">強勁</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2 px-3 font-semibold">終端需求前景</td>
-                                        <td class="py-2 px-3">企業與消費者對生成式AI服務的依賴度增加，需求從概念階段轉為實質應用。</td>
-                                        <td class="py-2 px-3 text-up">正面</td>
-                                        <td class="py-2 px-3 text-up">強勁</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2 px-3 font-semibold">供應鏈變化</td>
-                                        <td class="py-2 px-3">Google斥資<strong>90億美元</strong>擴大資料中心投資，對其AI供應鏈夥伴釋出強烈正面訊號。</td>
-                                        <td class="py-2 px-3 text-up">正面</td>
-                                        <td class="py-2 px-3 text-up">強勁</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2 px-3 font-semibold">基本面</td>
-                                        <td class="py-2 px-3">財報表現穩健，營收持續成長，且AI業務貢獻度提升，護城河穩固。</td>
-                                        <td class="py-2 px-3 text-up">買進</td>
-                                        <td class="py-2 px-3"><a href="https://www.tradingview.com/symbols/GOOGL/financials-overview/" target="_blank" class="text-blue-500 hover:text-blue-700">檢視</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2 px-3 font-semibold">技術面</td>
-                                        <td class="py-2 px-3">股價維持在上升趨勢通道內，交易量穩定放大，顯示多頭格局未變。</td>
-                                        <td class="py-2 px-3 text-up">買進</td>
-                                        <td class="py-2 px-3"><a href="https://www.tradingview.com/symbols/GOOGL/technicals/" target="_blank" class="text-blue-500 hover:text-blue-700">檢視</a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <p class="text-xs text-slate-500 mt-2 text-right">資料來源: Tradingview.com</p>
-                        <div class="mt-6 bg-amber-50 border-l-4 border-amber-400 p-6 rounded-lg">
-                            <p><strong class="text-red-700">分析師洞察：</strong></p>
-                            <div class="structured-analysis">
-                                <p><strong>基礎設施投資潮持續，長線動能無虞</strong> 儘管短期AI概念股漲勢出現分歧，但基礎設施建置的長期趨勢依然穩固。Google等科技巨頭持續投入數十億美元擴建資料中心，顯示對AI應用的長期需求充滿信心。這類大型投資並非短期炒作，而是對未來商業模式的戰略佈局，為相關供應鏈帶來可預期的成長動能。</p>
-                                <p class="mt-4"><strong>需求從雲端延伸至終端，邊緣運算成新藍海</strong> 隨著AI應用場景從集中式雲端運算擴展至個人裝置，邊緣AI需求將成為下一個成長引擎。Google致力於將AI模型整合至其作業系統與裝置，將帶動AI PC、AI手機等新產品週期。這將為掌握核心晶片與關鍵零組件的廠商創造新的營收來源。</p>
-                            </div>
-                        </div>
+                <h2 class="flex items-center text-amber-600"><i class="fa-solid fa-fire-flame-simple mr-3"></i><strong>能源與商品市場</strong></h2>
+                <div class="mt-4 border-t border-slate-200 pt-4">
+                    <p>商品市場昨日走勢分歧，原油價格在市場對關稅與俄羅斯供應的擔憂下回跌超過2%。黃金價格則因美國總統川普開除聯準會理事的舉動引發政治不確定性，避險需求推動金價登上兩週高點。</p>
+                    <ul>
+                        <li><strong>原油價格回跌：</strong>WTI原油價格下跌2.1%，市場擔憂美國對印度等國的關稅政策可能衝擊全球經濟成長，進而影響原油需求。此外，市場也在評估俄羅斯未來可能的供應狀況，多空因素交雜。</li>
+                        <li><strong>黃金價格因避險需求上漲：</strong>黃金期貨上漲1.97%，川普對聯準會的干預行動，動搖了市場對央行獨立性的信心，部分資金轉入黃金尋求避險，推升了金價。</li>
+                        <li><strong>工業金屬同步走強：</strong>基礎金屬ETF(DBB)上漲0.56%，與黃金走勢同步，顯示在政治不確定性下，部分資金也流入了實體資產。</li>
+                    </ul>
+                    <div class="analyst-insight">
+                        <p><strong>分析師洞察：</strong>昨日商品市場的表現，清晰地反映了政治事件對市場情緒的影響力。黃金的避險屬性在央行獨立性受到挑戰時再次凸顯。原油市場則在需求擔憂與潛在供應風險之間搖擺。短期內，市場焦點將持續圍繞在美國的政治動態以及即將公布的關鍵通膨數據，預期商品市場將維持較大的波動性。</p>
                     </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-green-700">買進：網路安全與國防 (以Palo Alto Networks (PANW)為例)</h3>
-                        <div class="overflow-x-auto mt-4">
-                            <table class="w-full text-center">
-                                <thead>
-                                    <tr>
-                                        <th class="py-2 px-3">分析維度</th>
-                                        <th class="py-2 px-3">核心洞察</th>
-                                        <th class="py-2 px-3">市場評級</th>
-                                        <th class="py-2 px-3">技術指標</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="py-2 px-3 font-semibold">監管政策風險</td>
-                                        <td class="py-2 px-3">各國政府對網路攻擊的重視程度提升，相關立法與國防預算持續增加。</td>
-                                        <td class="py-2 px-3 text-up">正面</td>
-                                        <td class="py-2 px-3 text-up">強勁</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2 px-3 font-semibold">終端需求前景</td>
-                                        <td class="py-2 px-3">企業與政府客戶的網路安全預算屬於剛性需求，不受景氣波動影響。</td>
-                                        <td class="py-2 px-3 text-up">正面</td>
-                                        <td class="py-2 px-3 text-up">強勁</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2 px-3 font-semibold">同業競爭格局</td>
-                                        <td class="py-2 px-3">產業領導者已建立強大技術護城河，新進者難以在短期內撼動其市場地位。</td>
-                                        <td class="py-2 px-3 text-up">正面</td>
-                                        <td class="py-2 px-3 text-up">強勁</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2 px-3 font-semibold">基本面</td>
-                                        <td class="py-2 px-3">營收與獲利持續穩健成長，企業客戶續約率高，現金流表現優異。</td>
-                                        <td class="py-2 px-3 text-up">買進</td>
-                                        <td class="py-2 px-3"><a href="https://www.tradingview.com/symbols/NASDAQ-PANW/financials-overview/" target="_blank" class="text-blue-500 hover:text-blue-700">檢視</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2 px-3 font-semibold">技術面</td>
-                                        <td class="py-2 px-3">股價處於長期上升趨勢，雖有震盪但未破壞多頭格局，後續可望持續走高。</td>
-                                        <td class="py-2 px-3 text-up">買進</td>
-                                        <td class="py-2 px-3"><a href="https://www.tradingview.com/symbols/NASDAQ-PANW/technicals/" target="_blank" class="text-blue-500 hover:text-blue-700">檢視</a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <p class="text-xs text-slate-500 mt-2 text-right">資料來源: Tradingview.com</p>
-                        <div class="mt-6 bg-amber-50 border-l-4 border-amber-400 p-6 rounded-lg">
-                            <p><strong class="text-red-700">分析師洞察：</strong></p>
-                            <div class="structured-analysis">
-                                <p><strong>地緣衝突升溫，網路國防預算成剛性需求</strong> 全球地緣政治緊張局勢持續，導致政府與企業對網路安全的重視程度大幅提升。美國政府警告中國駭客入侵超過<strong>200</strong>家公司，凸顯網路國防已成為國家安全與企業營運的關鍵環節。這類支出不受景氣循環影響，使得網路安全產業具備高防禦性與長期成長潛力。</p>
-                                <p class="mt-4"><strong>AI技術雙面刃，推升資安市場新商機</strong> 儘管AI技術加速了資安威脅的進化，但同時也為防禦方提供了更強大的工具。市場領導者如Palo Alto Networks透過AI技術增強其威脅偵測與防禦能力，並持續深化與政府機構的合作。此趨勢確保了資安產業的持續創新與高附加價值，是具備長期投資價值的領域。</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-red-700">賣出：消費性商品 (以Nike (NKE)為例)</h3>
-                        <div class="overflow-x-auto mt-4">
-                            <table class="w-full text-center">
-                                <thead>
-                                    <tr>
-                                        <th class="py-2 px-3">分析維度</th>
-                                        <th class="py-2 px-3">核心洞察</th>
-                                        <th class="py-2 px-3">市場評級</th>
-                                        <th class="py-2 px-3">技術指標</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="py-2 px-3 font-semibold">終端需求前景</td>
-                                        <td class="py-2 px-3">全球消費力道趨緩，消費者對非必需性商品的支出意願下降，影響品牌營收成長。</td>
-                                        <td class="py-2 px-3 text-down">負面</td>
-                                        <td class="py-2 px-3 text-down">疲弱</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2 px-3 font-semibold">成本結構變動</td>
-                                        <td class="py-2 px-3">面臨通膨壓力與供應鏈成本波動，毛利率受到擠壓，影響整體獲利能力。</td>
-                                        <td class="py-2 px-3 text-down">負面</td>
-                                        <td class="py-2 px-3 text-down">疲弱</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2 px-3 font-semibold">同業競爭格局</td>
-                                        <td class="py-2 px-3">新興品牌與快時尚競爭者崛起，市場份額被瓜分，品牌護城河面臨挑戰。</td>
-                                        <td class="py-2 px-3 text-down">負面</td>
-                                        <td class="py-2 px-3 text-down">疲弱</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2 px-3 font-semibold">基本面</td>
-                                        <td class="py-2 px-3">公司宣布裁員，顯示管理層對未來市場環境抱持謹慎態度，獲利壓力顯現。</td>
-                                        <td class="py-2 px-3 text-down">賣出</td>
-                                        <td class="py-2 px-3"><a href="https://www.tradingview.com/symbols/NYSE-NKE/financials-overview/" target="_blank" class="text-blue-500 hover:text-blue-700">檢視</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2 px-3 font-semibold">技術面</td>
-                                        <td class="py-2 px-3">股價處於長期下降趨勢，多次反彈未能突破關鍵阻力位，後續賣壓沉重。</td>
-                                        <td class="py-2 px-3 text-down">賣出</td>
-                                        <td class="py-2 px-3"><a href="https://www.tradingview.com/symbols/NYSE-NKE/technicals/" target="_blank" class="text-blue-500 hover:text-blue-700">檢視</a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <p class="text-xs text-slate-500 mt-2 text-right">資料來源: Tradingview.com</p>
-                        <div class="mt-6 bg-amber-50 border-l-4 border-amber-400 p-6 rounded-lg">
-                            <p><strong class="text-red-700">分析師洞察：</strong></p>
-                            <div class="structured-analysis">
-                                <p><strong>宏觀逆風影響終端消費，裁員顯示營運壓力</strong> 在通膨與高利率環境下，消費者對於非必需性支出的意願降低。Nike宣布裁員，此舉是公司因應成本壓力與市場需求疲弱的直接反應，顯示其核心業務面臨逆風。這不僅是一個單純的營運優化，更是整體產業面臨消費力道不振、獲利能力受考驗的警訊。</p>
-                                <p class="mt-4"><strong>產品競爭日趨激烈，品牌護城河面臨挑戰</strong> 運動服飾市場的競爭格局正在改變，除了既有的運動品牌之外，新興的電商與快時尚業者也加入了戰局。Nike在市場份額上面臨來自同業的侵蝕，導致其過去強大的品牌溢價與定價能力受到挑戰。儘管公司不斷創新，但短期內股價仍將面臨下行風險。</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-red-700">賣出：中國科技股 (以美團 (MPNGY)為例)</h3>
-                        <div class="overflow-x-auto mt-4">
-                            <table class="w-full text-center">
-                                <thead>
-                                    <tr>
-                                        <th class="py-2 px-3">分析維度</th>
-                                        <th class="py-2 px-3">核心洞察</th>
-                                        <th class="py-2 px-3">市場評級</th>
-                                        <th class="py-2 px-3">技術指標</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="py-2 px-3 font-semibold">監管政策風險</td>
-                                        <td class="py-2 px-3">中國政府對平台經濟持續實施嚴格監管，導致營運模式與獲利能力存在不確定性。</td>
-                                        <td class="py-2 px-3 text-down">負面</td>
-                                        <td class="py-2 px-3 text-down">疲弱</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2 px-3 font-semibold">終端需求前景</td>
-                                        <td class="py-2 px-3">中國經濟成長放緩與消費信心不足，影響其核心外賣與到店業務的成長。</td>
-                                        <td class="py-2 px-3 text-down">負面</td>
-                                        <td class="py-2 px-3 text-down">疲弱</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2 px-3 font-semibold">同業競爭格局</td>
-                                        <td class="py-2 px-3">來自抖音等短影音平台的跨界競爭，加劇了市場價格戰，侵蝕公司利潤。</td>
-                                        <td class="py-2 px-3 text-down">負面</td>
-                                        <td class="py-2 px-3 text-down">疲弱</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2 px-3 font-semibold">基本面</td>
-                                        <td class="py-2 px-3">第二季利潤較去年同期大幅下滑<strong>近9成</strong>，核心業務盈利能力顯著承壓。</td>
-                                        <td class="py-2 px-3 text-down">賣出</td>
-                                        <td class="py-2 px-3"><a href="https://www.tradingview.com/symbols/MPNGY/financials-overview/" target="_blank" class="text-blue-500 hover:text-blue-700">檢視</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2 px-3 font-semibold">技術面</td>
-                                        <td class="py-2 px-3">股價呈現長期下跌趨勢，創下近期新低，短期內反轉動能不足。</td>
-                                        <td class="py-2 px-3 text-down">賣出</td>
-                                        <td class="py-2 px-3"><a href="https://www.tradingview.com/symbols/MPNGY/technicals/" target="_blank" class="text-blue-500 hover:text-blue-700">檢視</a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <p class="text-xs text-slate-500 mt-2 text-right">資料來源: Tradingview.com</p>
-                        <div class="mt-6 bg-amber-50 border-l-4 border-amber-400 p-6 rounded-lg">
-                            <p><strong class="text-red-700">分析師洞察：</strong></p>
-                            <div class="structured-analysis">
-                                <p><strong>宏觀逆風與激烈競爭，利潤空間持續收窄</strong> 美團第二季利潤暴跌<strong>近9成</strong>，這不僅反映了中國消費市場的疲弱，也凸顯了與抖音等競爭者之間激烈的市場份額爭奪戰。由於平台經濟的監管紅線依然存在，公司難以透過漲價來提升獲利，利潤空間持續收窄，投資人應對其短期盈利前景保持高度謹慎。</p>
-                                <p class="mt-4"><strong>股價反映結構性困境，短期內缺乏反轉動力</strong> 美團股價在利潤暴跌消息後應聲大跌，這表明市場已將其視為面臨結構性困境的標的。在缺乏明確的政策利多與宏觀經濟改善信號下，公司股價難以在短期內找到有效的反轉動力。此類企業的投資風險已顯著高於機會，短期內不宜介入。</p>
-                            </div>
-                        </div>
+                    <div class="overflow-x-auto mt-8">
+                        <h3 class="table-title text-slate-700 mb-4">主要商品收盤表現</h3>
+                        <table class="w-full text-left text-slate-600 border-collapse table-bordered">
+                            <thead class="bg-slate-100">
+                                <tr>
+                                    <th>商品名稱</th>
+                                    <th class="text-right">最新價格</th>
+                                    <th class="text-right">日漲跌</th>
+                                    <th class="text-right">五日漲跌</th>
+                                    <th class="text-right">月漲跌</th>
+                                    <th class="text-right">季漲跌</th>
+                                    <th class="text-right">年初至今</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>WTI原油</td><td class="text-right">63.44</td><td class="text-green-600 text-right">-2.10%</td><td class="text-red-600 text-right">0.36%</td><td class="text-green-600 text-right">-2.64%</td><td class="text-red-600 text-right">3.10%</td><td class="text-green-600 text-right">-11.54%</td></tr>
+                                <tr><td>布蘭特原油</td><td class="text-right">66.89</td><td class="text-green-600 text-right">-2.78%</td><td class="text-red-600 text-right">0.07%</td><td class="text-green-600 text-right">-2.26%</td><td class="text-red-600 text-right">3.26%</td><td class="text-green-600 text-right">-10.38%</td></tr>
+                                <tr><td>黃金期貨</td><td class="text-right">3,440.30</td><td class="text-red-600 text-right">1.97%</td><td class="text-red-600 text-right">2.90%</td><td class="text-red-600 text-right">3.19%</td><td class="text-red-600 text-right">2.28%</td><td class="text-red-600 text-right">30.85%</td></tr>
+                                <tr><td>基礎金屬ETF (DBB)</td><td class="text-right">19.76</td><td class="text-red-600 text-right">0.56%</td><td class="text-red-600 text-right">1.65%</td><td class="text-red-600 text-right">0.56%</td><td class="text-red-600 text-right">5.95%</td><td class="text-red-600 text-right">4.83%</td></tr>
+                            </tbody>
+                        </table>
+                        <p class="text-right text-xs text-slate-500 mt-2">資料來源: 20250827_指數整理表_含歷史資料.txt</p>
                     </div>
                 </div>
-                <p class="text-xs text-slate-500 mt-6 text-center">© 2025 Eagle Eye Insight Desk — 溯源‧思辨‧啟發</p>
+            </article>
+
+            <!-- Section 5: Taiwan Market Analysis -->
+            <article class="bg-white p-6 md:p-8 rounded-2xl shadow-lg">
+                <h2 class="flex items-center text-green-600"><i class="fa-solid fa-mountain-sun mr-3"></i><strong>台股盤勢解析</strong></h2>
+                <div class="mt-4 border-t border-slate-200 pt-4">
+                    <p>受美股前一交易日反彈的激勵，台股昨日開高震盪，盤中一度試圖挑戰前高，但尾盤在MSCI季度調整的影響下，爆出大量並小幅收漲27點，收在24,305.10點。盤面呈現類股輪動，輝達概念股、軍工及航運股表現相對強勢。三大法人合計賣超138.09億元，其中外資賣超145.08億元，顯示在指數位於高檔區間，外資追價意願依然保守。</p>
+                    <ul>
+                        <li><strong>MSCI季度調整影響尾盤：</strong>昨日為MSCI季度調整生效日，最後一盤爆出1224億元的大量，對指數造成甩尾效應，使得漲幅收斂。</li>
+                        <li><strong>外資連續賣超：</strong>外資連續第三個交易日賣超台股，合計賣超金額龐大，顯示外資在輝達財報公布前，以及對關稅議題的擔憂下，操作態度偏向謹慎。</li>
+                        <li><strong>內資撐盤，個股表現：</strong>相較於外資的賣超，投信與自營商昨日站在買方，扮演撐盤角色。盤面上，資金轉進軍工、航運等非電族群，以及部分輝達概念股，呈現個股輪動的格局。</li>
+                    </ul>
+                    <div class="analyst-insight">
+                        <p><strong>分析師洞察：</strong>台股昨日的走勢，顯示在指數位於歷史高檔區附近，市場的多空看法分歧。外資的持續賣超是盤面上最大的壓力來源，而內資則扮演了穩盤的角色。短期而言，市場的焦點將完全集中在輝達的財報結果。若財報優於預期，有望激勵外資回補，帶動指數向上突破；反之，若財報不如預期，則可能引發失望性賣壓，使指數回測下方支撐。</p>
+                    </div>
+                    <div class="overflow-x-auto mt-8">
+                        <h3 class="table-title text-slate-700 mb-4">主要亞洲指數表現</h3>
+                        <table class="w-full text-left text-slate-600 border-collapse table-bordered">
+                             <thead class="bg-slate-100">
+                                <tr>
+                                    <th>指數名稱</th>
+                                    <th class="text-right">最新收盤價</th>
+                                    <th class="text-right">日漲跌</th>
+                                    <th class="text-right">五日漲跌</th>
+                                    <th class="text-right">月漲跌</th>
+                                    <th class="text-right">季漲跌</th>
+                                    <th class="text-right">年初至今</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>台灣加權指數</td><td class="text-right">24,305.10</td><td class="text-red-600 text-right">0.11%</td><td class="text-red-600 text-right">2.88%</td><td class="text-red-600 text-right">4.03%</td><td class="text-red-600 text-right">12.25%</td><td class="text-red-600 text-right">5.51%</td></tr>
+                                <tr><td>日經225</td><td class="text-right">42,394.40</td><td class="text-green-600 text-right">-0.97%</td><td class="text-green-600 text-right">-1.15%</td><td class="text-red-600 text-right">2.26%</td><td class="text-red-600 text-right">14.08%</td><td class="text-red-600 text-right">6.27%</td></tr>
+                            </tbody>
+                        </table>
+                        <p class="text-right text-xs text-slate-500 mt-2">資料來源: 20250827_指數整理表_含歷史資料.txt</p>
+                    </div>
+                    <div class="overflow-x-auto mt-8">
+                        <h3 class="table-title text-slate-700 mb-4">台股三大法人買賣超</h3>
+                        <table class="w-full text-left text-slate-600 border-collapse table-bordered">
+                            <thead class="bg-slate-100">
+                                <tr>
+                                    <th>法人</th>
+                                    <th class="text-right">買賣超(億)</th>
+                                    <th class="text-right">近5日(億)</th>
+                                    <th class="text-right">近20日(億)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>外資</td><td class="text-green-600 text-right">-145.08</td><td class="text-green-600 text-right">-795.16</td><td class="text-green-600 text-right">-209.68</td></tr>
+                                <tr><td>投信</td><td class="text-green-600 text-right">-26.25</td><td class="text-green-600 text-right">-12.14</td><td class="text-red-600 text-right">47.88</td></tr>
+                                <tr><td>自營商</td><td class="text-red-600 text-right">33.24</td><td class="text-red-600 text-right">67.69</td><td class="text-red-600 text-right">272.30</td></tr>
+                                <tr><td>總計</td><td class="text-green-600 text-right">-138.09</td><td class="text-green-600 text-right">-739.61</td><td class="text-red-600 text-right">110.50</td></tr>
+                            </tbody>
+                        </table>
+                        <p class="text-right text-xs text-slate-500 mt-2">資料來源: 20250827_指數整理表_含歷史資料.txt</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Section 6: FX Trends -->
+            <article class="bg-white p-6 md:p-8 rounded-2xl shadow-lg">
+                <h2 class="flex items-center text-cyan-600"><i class="fa-solid fa-dollar-sign mr-3"></i><strong>台幣與美元走勢</strong></h2>
+                <div class="mt-4 border-t border-slate-200 pt-4">
+                    <p>在美國總統川普宣布開除聯準會(Fed)理事庫克，引發市場對央行獨立性擔憂後，美元指數應聲下跌。新台幣則在台股反彈、外資賣超力道減緩的情況下，貶勢暫歇，終場小幅回升，但整體仍處於相對弱勢的格局。</p>
+                    <ul>
+                        <li><strong>美元因政治干預而走弱：</strong>川普對Fed的人事干預，動搖了市場對美元的信心，導致美元指數下跌0.22%。投資者擔憂政治力將影響未來的貨幣政策，增加了美元前景的不確定性。</li>
+                        <li><strong>台幣貶勢暫歇：</strong>隨著台股反彈，外資賣超金額縮小，新台幣的貶值壓力暫時得到緩解。然而，在關鍵的美國通膨數據公布前，市場交投仍偏向謹慎。</li>
+                        <li><strong>亞幣普遍反彈：</strong>受美元走弱的影響，主要亞洲貨幣昨日兌美元普遍呈現升值，為近期的連續貶勢帶來喘息機會。</li>
+                    </ul>
+                    <div class="analyst-insight">
+                        <p><strong>分析師洞察：</strong>昨日美元的走弱，主要是受到政治事件的短期衝擊。然而，市場的核心焦點仍是聯準會的貨幣政策。本週將公布的核心PCE數據，其結果對市場的重要性遠高於近期的政治雜音。若數據顯示通膨依然頑固，美元可能迅速收復失地；反之，若數據持續降溫，則可能為新台幣等非美貨幣提供更大的反彈空間。</p>
+                    </div>
+                    <div class="overflow-x-auto mt-8">
+                        <h3 class="table-title text-slate-700 mb-4">主要貨幣對表現</h3>
+                        <table class="w-full text-left text-slate-600 border-collapse table-bordered">
+                            <thead class="bg-slate-100">
+                                <tr>
+                                    <th>貨幣對</th>
+                                    <th class="text-right">最新匯率</th>
+                                    <th class="text-right">日變動</th>
+                                    <th class="text-right">五日漲跌</th>
+                                    <th class="text-right">月漲跌</th>
+                                    <th class="text-right">季漲跌</th>
+                                    <th class="text-right">年初至今</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>美元指數</td><td class="text-right">98.21</td><td class="text-green-600 text-right">-0.22%</td><td class="text-green-600 text-right">-0.01%</td><td class="text-red-600 text-right">0.57%</td><td class="text-green-600 text-right">-0.91%</td><td class="text-green-600 text-right">-9.48%</td></tr>
+                                <tr><td>美元兌台幣</td><td class="text-right">30.54</td><td class="text-red-600 text-right">+0.33%</td><td class="text-red-600 text-right">+0.90%</td><td class="text-red-600 text-right">+3.81%</td><td class="text-red-600 text-right">+1.91%</td><td class="text-green-600 text-right">-6.80%</td></tr>
+                                <tr><td>歐元兌美元</td><td class="text-right">1.16</td><td class="text-red-600 text-right">0.23%</td><td class="text-green-600 text-right">-0.05%</td><td class="text-green-600 text-right">-0.94%</td><td class="text-red-600 text-right">2.40%</td><td class="text-red-600 text-right">11.91%</td></tr>
+                                <tr><td>美元兌日圓</td><td class="text-right">147.44</td><td class="text-green-600 text-right">-0.26%</td><td class="text-red-600 text-right">0.08%</td><td class="text-red-600 text-right">0.30%</td><td class="text-red-600 text-right">3.20%</td><td class="text-green-600 text-right">-6.09%</td></tr>
+                            </tbody>
+                        </table>
+                        <p class="text-right text-xs text-slate-500 mt-2">資料來源: 20250827_指數整理表_含歷史資料.txt</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Section 7: Sector Outlook -->
+            <article class="bg-white p-6 md:p-8 rounded-2xl shadow-lg">
+                 <h2 class="flex items-center text-purple-600"><i class="fa-solid fa-industry mr-3"></i><strong>產業焦點公司</strong></h2>
+                <div class="mt-4 border-t border-slate-200 pt-4 space-y-6">
+                    <div>
+                        <h3>智慧手機 (以蘋果 APPLE 為例)</h3>
+                        <p class="text-sm">
+                            <strong>趨勢/消息面：</strong>公司正式宣布將於9月10日舉行秋季新品發表會，市場普遍預期將推出iPhone 17系列。此消息激勵股價上漲，並帶動相關供應鏈的正面預期。<br>
+                            <strong>基本面：</strong><a href="https://tw.tradingview.com/symbols/NASDAQ-AAPL/financials-overview/" target="_blank" class="text-blue-600 hover:underline">按此看基本面數據</a>。儘管全球智慧手機市場成長趨緩，但蘋果憑藉其高端品牌定位與強大的生態系，仍維持穩固的市占率與獲利能力。<br>
+                            <strong>技術面：</strong><a href="https://tw.tradingview.com/symbols/NASDAQ-AAPL/technicals/" target="_blank" class="text-blue-600 hover:underline">按此看技術面數據</a>。股價在發表會日期確定後，出現明顯上漲，帶領科技股反彈。
+                        </p>
+                        <p class="text-sm mt-2"><strong>展望分析：</strong>蘋果的新品發表會是每年科技界的盛事，市場高度關注iPhone 17能否帶來足夠的創新以刺激換機潮。此外，傳聞中的最薄iPhone Air與摺疊機等產品，也為公司未來的成長增添了想像空間。新品的實際銷售表現，將是影響公司後續營運與股價的關鍵。</p>
+                    </div>
+                    <div>
+                        <h3>AI晶片 (以輝達 NVIDIA 為例)</h3>
+                        <p class="text-sm">
+                            <strong>趨勢/消息面：</strong>輝達即將公布最新財報，市場高度關注其數據中心業務的成長性與未來展望，這被視為整體AI產業的風向球。同時，公司新推出的機器人平台Jetson Thor也備受矚目。<br>
+                            <strong>基本面：</strong><a href="https://tw.tradingview.com/symbols/NASDAQ-NVDA/financials-overview/" target="_blank" class="text-blue-600 hover:underline">按此看基本面數據</a>。輝達在AI GPU市場佔有絕對主導地位，其強勁的營收與獲利成長反映了全球對AI運算能力的龐大需求。<br>
+                            <strong>技術面：</strong><a href="https://tw.tradingview.com/symbols/NASDAQ-NVDA/technicals/" target="_blank" class="text-blue-600 hover:underline">按此看技術面數據</a>。股價在財報公布前夕維持高檔震盪，市場普遍抱持樂觀預期，但亦須提防財報公布後可能出現的利多出盡賣壓。
+                        </p>
+                        <p class="text-sm mt-2"><strong>展望分析：</strong>輝達不僅是AI硬體的領導者，更透過CUDA平台打造了強大的軟體生態系，構成了難以超越的護城河。未來，除了數據中心，AI在PC、汽車、機器人等邊緣裝置的應用，將為公司開啟新的成長曲線。然而，來自超微(AMD)、英特爾(Intel)及雲端大廠自研晶片的競爭，以及地緣政治風險，是其未來發展的主要挑戰。</p>
+                    </div>
+                     <div>
+                        <h3>半導體與政府干預 (以英特爾 Intel 為例)</h3>
+                        <p class="text-sm">
+                            <strong>趨勢/消息面：</strong>繼川普政府宣布無償取得英特爾股權後，又傳出將撤銷先前拜登政府時期所批准的74億美元半導體研究資助計畫。這一系列舉動，凸顯了美國政府對半導體產業的高度介入與政策的不確定性。<br>
+                            <strong>基本面：</strong><a href="https://tw.tradingview.com/symbols/NASDAQ-INTC/financials-overview/" target="_blank" class="text-blue-600 hover:underline">按此看基本面數據</a>。英特爾正處於轉型的關鍵時期，積極追趕在晶圓代工領域的技術差距，並試圖在AI晶片市場挑戰輝達。政府的介入可能為其帶來資源，卻也可能影響其國際業務。<br>
+                            <strong>技術面：</strong><a href="https://tw.tradingview.com/symbols/NASDAQ-INTC/technicals/" target="_blank" class="text-blue-600 hover:underline">按此看技術面數據</a>。股價近期因政府干預消息而劇烈波動，市場正評估此一「交易導向資本主義」的長期影響。
+                        </p>
+                        <p class="text-sm mt-2"><strong>展望分析：</strong>政府直接入股，對英特爾而言是雙面刃。短期內可能獲得政策支持與資金，但長期而言，恐將引發客戶對其獨立性的疑慮，並可能在海外市場遭遇阻礙。英特爾的未來，不僅取決於其自身的技術轉型能否成功，也將深受美國產業政策與地緣政治變化的影響。</p>
+                    </div>
+                    <div>
+                        <h3>製藥 (以禮來 Eli Lilly 為例)</h3>
+                        <p class="text-sm">
+                            <strong>趨勢/消息面：</strong>禮來公司宣布其開發的口服減重藥，在第三期臨床試驗中取得成功，效果顯著，並預計最快於2026年上市，此消息激勵了市場對其未來成長的想像。<br>
+                            <strong>基本面：</strong><a href="https://tw.tradingview.com/symbols/NYSE-LLY/financials-overview/" target="_blank" class="text-blue-600 hover:underline">按此看基本面數據</a>。禮來是全球領先的製藥公司，在糖尿病、癌症與自體免疫疾病等領域擁有強大的產品線。減重藥市場被視為下一個兆級美元的龐大商機。<br>
+                            <strong>技術面：</strong><a href="https://tw.tradingview.com/symbols/NYSE-LLY/technicals/" target="_blank" class="text-blue-600 hover:underline">按此看技術面數據</a>。在試驗成功的利多消息激勵下，股價通常會出現正面反應，反映市場對新藥未來銷售潛力的樂觀預期。
+                        </p>
+                        <p class="text-sm mt-2"><strong>展望分析：</strong>口服減重藥的便利性，使其相較於現有的注射型藥物，具備更廣泛的市場潛力。禮來的成功，不僅將為公司帶來巨大的營收貢獻，也將加劇全球減重藥市場的競爭。未來市場將關注其最終的定價策略、產能佈局，以及與競爭對手的市場份額爭奪戰。</p>
+                    </div>
+                </div>
             </article>
         </main>
     </div>
-    <script id="downloadScript">
-        const downloadBtn = document.getElementById('downloadBtn');
-        if (downloadBtn) {
-            downloadBtn.addEventListener('click', () => {
-                const mainTitle = document.querySelector('h1.main-title');
-                let dateStr = '20250829';
-                const htmlContent = document.documentElement.outerHTML;
-                const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
-                const url = URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = `${dateStr}.html`;
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
-                URL.revokeObjectURL(url);
-            });
-        }
-    </script>
 </body>
 </html>
